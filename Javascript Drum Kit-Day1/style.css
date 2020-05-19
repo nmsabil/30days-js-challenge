@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+  text-shadow: #000000 2px 2px 3px, #4d4d4d -2px -2px 3px;
+}
+.title {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 300px;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height: 50vh;
+}
+
+.key {
+  cursor: pointer;
+  padding: 20px;
+  margin: 15px;
+  height: 70px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #262626;
+  box-shadow: #000000 4px 4px 8px, #4d4d4d -4px -4px 8px;
+  color: white;
+  text-shadow: 2px 2px 1px #3a3a3a;
+  border-radius: 10px;
+  transition: 0.05s;
+}
+.playing {
+  box-shadow: inset 5px 5px 16px #000000, inset -5px -5px 8px #4d4d4d;
+  transform: scale(0.95, 0.95);
+}
+
+.keys .key kbd {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.keys .key .sound {
+  font-size: 15px;
+  text-transform: uppercase;
+
+  margin-top: 3px;
+  color: #696767;
+  text-shadow: 1px 1px 2px #707070;
+  letter-spacing: 1.2px;
+}
